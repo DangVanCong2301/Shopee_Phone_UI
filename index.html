@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="./assets/img/shopee_logo.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/phone.css">
+    <link rel="stylesheet" href="./assets/css/home_phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--=============== ICONSCOUT ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Shopee Phone - Trang chủ</title>
+</head>
+<body>
+    <div class="app__phone">
+        <div class="phone">
+            <div class="phone__buttons">
+                <div class="phone__buttons-left">
+                    <div class="phone__buttons-left-button"></div>
+                    <div class="phone__buttons-left-button"></div>
+                    <div class="phone__buttons-left-button"></div>
+                </div>
+                <div class="phone__buttons-right">
+                    <div class="phone__buttons-right-button"></div>
+                </div>
+            </div>
+            <div class="phone__camera"></div>
+            <div class="phone__screen-container">
+                <div class="phone__screen-bg">
+                    <header class="phone-header">
+                        <div class="phone-header__with-search">
+                            <div class="phone-header__search">
+                                <div class="phone-header__search-input-wrap">
+                                    <i class="uil uil-search phone-header__search-input-icon"></i>
+                                    <input type="text" class="phone-header__search-input" placeholder="Tìm kiếm Shopee">
+            
+                                    <!--Search history-->
+                                    <!-- <div class="phone-header__search-history hide-on-destop">
+                                        <h3 class="phone-header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                        <ul class="phone-header__search-history-list">
+                                            <li class="phone-header__search-history-item">
+                                                <a href="">Kem dưỡng da</a>
+                                            </li>
+                                            <li class="phone-header__search-history-item">
+                                                <a href="">Kem trị mụn</a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+        
+                            <!--Cart layout-->
+                            <div class="phone-header__cart">
+                                <div class="phone-header__cart-wrap">
+                                    <a href="cart.html" class="phone-header__cart-link">
+                                        <i class="phone-header__cart-icon fa-solid fa-cart-shopping"></i>
+                                        <span class="phone-header__cart-notice">4</span>
+                                    </a>
+                                    <!--No cart: header__cart-list--no-cart-->
+                                    <div class="phone-header__cart-container">
+                                        <!-- <div class="header__cart-list header__cart-list--no-cart">
+                                            <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                            <span class="header__cart-list-no-cart-msg">
+                                                Chưa có sản phẩm
+                                            </span>
+                                        </div> -->
+                                        <div class="phone-header__cart-list">
+                                            <h4 class="phone-header__cart-heading">Sản phẩm đã thêm</h4>
+                                            <ul class="phone-header__cart-list-item">
+                                                <li class="phone-header__cart-item">
+                                                    <div class="phone-header__cart-item-img">
+                                                        <img src="./assets/img/sac_du_phong.png" class="phone-header__cart-item-img" alt="">
+                                                    </div>
+                                                    <div class="phone-header__cart-item-info">
+                                                        <div class="phone-header__cart-item-head">
+                                                            <h5 class="phone-header__cart-item-name">Tai nghe eport</h5>
+                                                            <div class="phone-header__cart-item-price-wrap">
+                                                                <span class="phone-header__cart-item-price">100.000 đ</span>
+                                                                <span class="phone-header__cart-item-multifly">X</span>
+                                                                <span class="phone-header__cart-item-qnt">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="phone-header__cart-item-body">
+                                                            <div class="phone-header__cart-item-description">
+                                                                Phân loại hàng:Bạc
+                                                            </div>
+                                                            <div class="phone-header__cart-item-remove">Xoá</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                            <div class="phone-header__cart-btn">
+                                                <div class="btn btn--primary">Xem giỏ hàng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- User  -->
+                            <div class="phone-header__user">
+                                <!-- <div class="phone-header__user-symbol hide-on-destop">
+                                    <a href="login.html" class="header__mobile-user-link">  
+                                        <i class="uil uil-user header__mobile-user-icon"></i>
+                                    </a>
+                                </div> -->
+                                <div class="phone-header__user-avatar">
+                                    <div class="phone-header__mobile-user-avatar-img" style="background-image: url(./assets/img/profile_avatar.jpg);"></div>
+                                    <div class="phone-header__user-avatar-menu">
+                                        <ul class="phone-header__navbar-user-menu">
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Tài khoản của tôi</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Địa chỉ của tôi</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Đơn mua</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item phone-header__navbar-user-item--separate">
+                                                <a href="/User/Logout">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </header>
+                    <div class="app__container">
+                        <div class="phone-banner">
+                            <div class="phone-banner__container">
+                                <div class="phone-banner__list">
+                                    <a href="#" class="phone-banner__item" style="background-image: linear-gradient(0, #dbcbf0, #f5eeff);">
+                                        <div class="phone-banner__slider">
+                                            <div class="phone-banner__slider-sale">
+                                                <div class="phone-banner__slider-title">Da căng nền sáng</div>
+                                                <div class="phone-banner__slider-title-sub">Sẵn sàng săn Deal</div>
+                                                <div class="phone-banner__slider-voucher">
+                                                    <div class="phone-banner__slider-voucher-name">Ưu đãi</div>
+                                                    <span>50%</span>
+                                                </div>
+                                                <div class="phone-banner__slider-voucher-time">Duy nhất 3.6</div>
+                                            </div>
+                                            <div class="phone-banner__item-shop">
+                                                <div class="phone-banner__item-shop-name">
+                                                    <div class="phone-banner__item-name-title">LANEIGE</div>
+                                                    <span>Officical</span>
+                                                </div>
+                                                <div class="phone-banner__item-shop-img">
+                                                    <img class="phone-banner__item-shop-img-product" src="./assets/img/bo_san_pham_laneige.png"  alt="">
+                                                    <img class="phone-banner__item-shop-img-beauty" src="./assets/img/my_pham_action.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="phone-banner__item" style="background-image: linear-gradient(0, #e375b5 ,#e8b0d0);">
+                                        <div class="phone-banner__slider">
+                                            <div class="phone-banner__slider-sale">
+                                                <div class="phone-banner__slider-title">Tiện ích cho cuộc sống</div>
+                                                <div class="phone-banner__slider-title-sub">Sẵn sàng săn Deal</div>
+                                                <div class="phone-banner__slider-voucher">
+                                                    <div class="phone-banner__slider-voucher-name">Ưu đãi</div>
+                                                    <span>50%</span>
+                                                </div>
+                                                <div class="phone-banner__slider-voucher-time">Duy nhất 3.6</div>
+                                            </div>
+                                            <div class="phone-banner__item-shop">
+                                                <div class="phone-banner__item-shop-name">
+                                                    <div class="phone-banner__item-name-title">Viet Mark</div>
+                                                    <span>Shop</span>
+                                                </div>
+                                                <div class="phone-banner__item-shop-img">
+                                                    <img class="phone-banner__item-shop-img-beauty" src="./assets/img/am_sieu_toc_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="phone-banner__item">
+                                        <div class="phone-banner__slider">
+                                            <div class="phone-banner__slider-sale">
+                                                <div class="phone-banner__slider-title">Đồ công nghệ hiện đại</div>
+                                                <div class="phone-banner__slider-title-sub">Sẵn sàng săn Deal</div>
+                                                <div class="phone-banner__slider-voucher">
+                                                    <div class="phone-banner__slider-voucher-name">Ưu đãi</div>
+                                                    <span>50%</span>
+                                                </div>
+                                                <div class="phone-banner__slider-voucher-time">Duy nhất 3.6</div>
+                                            </div>
+                                            <div class="phone-banner__item-shop">
+                                                <div class="phone-banner__item-shop-name">
+                                                    <div class="phone-banner__item-name-title">F4</div>
+                                                    <span>Shop</span>
+                                                </div>
+                                                <div class="phone-banner__item-shop-img">
+                                                    <img class="phone-banner__item-shop-img-beauty" src="./assets/img/sac_du_phong.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="phone-banner__arrow">
+                                    <i class="uil uil-angle-left phone-banner__arrow-icon phone-banner__arrow-icon-prev"></i>
+                                    <i class="uil uil-angle-right phone-banner__arrow-icon phone-banner__arrow-icon-next"></i>
+                                </div>
+                                
+                                <div class="phone-banner__bottom">
+                                    <div class="phone-banner__bottom-pagination">
+                                        <!-- <div class=""></div>
+                                        <div class=""></div>
+                                        <div class=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-store">
+                            <div class="phone-store__header">
+                                <div class="phone-store__header-title">Cửa hàng</div>
+                                <div class="phone-store__header-arrow">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="phone-store__container">
+                                <div class="phone-store__list">
+                                    <div class="phone-store__item">
+                                        <a href="#" class="phone-store__item-link">
+                                            <div class="phone-store__item-img" style="background-image: url(./assets/img/am_sieu_toc_1.png);">
+                                                <div class="phone-store__item-img-blur-bottom">  
+                                                </div>
+                                                <div class="home-product-item__img-loading" style="display: none;">
+                                                    <i class="uil uil-shopping-bag home-product-item__img-loading-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-mall">
+                                                <div class="phone-store__item-mall-img" style="background-image: url(./assets/img/vietmark_logo.png);">
+                                                    <div class="home-product-item__img-loading" style="display: none;">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-info">
+                                                <div class="phone-store__item-title">
+                                                    Viet Mark
+                                                </div>
+                                                <div class="phone-store__item-subtitle">
+                                                    VietMark
+                                                </div>
+                                                <div class="store__item-info-loading" style="display: none;">
+                                                    <div class="category-item__name-loading-line"></div>
+                                                    <div class="category-item__name-loading-line"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="phone-store__item">
+                                        <a href="#" class="phone-store__item-link">
+                                            <div class="phone-store__item-img" style="background-image: url(./assets/img/laneige_product.jpg);">
+                                                <div class="phone-store__item-img-blur-bottom">  
+                                                </div>
+                                                <div class="home-product-item__img-loading" style="display: none;">
+                                                    <i class="uil uil-shopping-bag home-product-item__img-loading-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-mall">
+                                                <div class="phone-store__item-mall-img" style="background-image: url(./assets/img/laneige_logo.png);">
+                                                    <div class="home-product-item__img-loading" style="display: none;">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-info">
+                                                <div class="phone-store__item-title">
+                                                    Laneige
+                                                </div>
+                                                <div class="phone-store__item-subtitle">
+                                                    Laneige
+                                                </div>
+                                                <div class="store__item-info-loading" style="display: none;">
+                                                    <div class="category-item__name-loading-line"></div>
+                                                    <div class="category-item__name-loading-line"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="phone-store__item">
+                                        <a href="#" class="phone-store__item-link">
+                                            <div class="phone-store__item-img" style="background-image: url(./assets/img/sac_du_phong.png);">
+                                                <div class="phone-store__item-img-blur-bottom">  
+                                                </div>
+                                                <div class="home-product-item__img-loading" style="display: none;">
+                                                    <i class="uil uil-shopping-bag home-product-item__img-loading-icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-mall">
+                                                <div class="phone-store__item-mall-img" style="background-image: url(./assets/img/f4shop_logo.png);">
+                                                    <div class="home-product-item__img-loading" style="display: none;">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-store__item-info">
+                                                <div class="phone-store__item-title">
+                                                    F4 Shop
+                                                </div>
+                                                <div class="phone-store__item-subtitle">
+                                                    F4 Shop
+                                                </div>
+                                                <div class="store__item-info-loading" style="display: none;">
+                                                    <div class="category-item__name-loading-line"></div>
+                                                    <div class="category-item__name-loading-line"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone__notch-container">
+                <div class="phone__notch"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/home_phone.js"></script>
+</html>
