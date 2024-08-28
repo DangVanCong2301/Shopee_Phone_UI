@@ -150,6 +150,12 @@
     background: #f5f5f5;
     border-radius: calc(var(--border-radius) - var(--pad));
     overflow: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.phone__screen-bg::-webkit-scrollbar {
+    display: none;
 }
 
 .phone__notch-container {
