@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="./assets/img/shopee_logo.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/phone.css">
+    <link rel="stylesheet" href="./assets/css/pickup_channel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--=============== ICONSCOUT ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Shopee Phone - Kênh người lấy hàng</title>
+</head>
+<body>
+    <div class="app__phone">
+        <div class="phone">
+            <div class="phone__buttons">
+                <div class="phone__buttons-left">
+                    <div class="phone__buttons-left-button"></div>
+                    <div class="phone__buttons-left-button"></div>
+                    <div class="phone__buttons-left-button"></div>
+                </div>
+                <div class="phone__buttons-right">
+                    <div class="phone__buttons-right-button"></div>
+                </div>
+            </div>
+            <div class="phone__camera"></div>
+            <div class="phone__screen-container">
+                <div class="phone__screen-bg">
+                    <header class="phone-header">
+                        <div class="phone-header__with-search">
+                            <div class="phone-header__logo">
+                                <img src="./assets/img/SPX_express_logo.png" class="phone-header__logo-img" alt="">
+                                <div class="phone-header__title">Kênh lấy hàng</div>
+                            </div>
+                            <div class="phone-header__search">
+                                <div class="phone-header__search-input-wrap">
+                                    <i class="uil uil-search phone-header__search-input-icon"></i>
+                                    <input type="text" class="phone-header__search-input" placeholder="Tìm kiếm Shopee">
+            
+                                    <!--Search history-->
+                                    <!-- <div class="phone-header__search-history hide-on-destop">
+                                        <h3 class="phone-header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                        <ul class="phone-header__search-history-list">
+                                            <li class="phone-header__search-history-item">
+                                                <a href="">Kem dưỡng da</a>
+                                            </li>
+                                            <li class="phone-header__search-history-item">
+                                                <a href="">Kem trị mụn</a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="phone-header__user">
+                                <!-- <div class="phone-header__user-symbol hide-on-destop">
+                                    <a href="login.html" class="header__mobile-user-link">  
+                                        <i class="uil uil-user header__mobile-user-icon"></i>
+                                    </a>
+                                </div> -->
+                                <div class="phone-header__user-avatar">
+                                    <div class="phone-header__mobile-user-avatar-img" style="background-image: url(./assets/img/profile_avatar.jpg);"></div>
+                                    <div class="phone-header__user-avatar-menu">
+                                        <ul class="phone-header__navbar-user-menu">
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Tài khoản của tôi</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Địa chỉ của tôi</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item">
+                                                <a href="">Đơn mua</a>
+                                            </li>
+                                            <li class="phone-header__navbar-user-item phone-header__navbar-user-item--separate">
+                                                <a href="/User/Logout">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </header>
+                    <div class="app__container">
+                        <div class="phone-pickup">
+                            <div class="phone-pickup__title">Danh sách cần làm</div>
+                            <div class="phone-pickup__list">
+                                <div class="phone-pickup__item">
+                                    <div class="phone-pickup__item-numb">0</div>
+                                    <div class="phone-pickup__item-numb-text">Chờ xác nhận</div>
+                                </div>
+                                <div class="phone-pickup__item">
+                                    <div class="phone-pickup__item-numb">0</div>
+                                    <div class="phone-pickup__item-numb-text">Chờ lấy hàng</div>
+                                </div>
+                                <!-- <div class="phone-pickup__work-pickup-modal">
+                                    <div class="phone-pickup__work-pickup-modal-header">
+                                        
+                                    </div>
+                                </div> -->
+                                <div class="phone-pickup__item">
+                                    <div class="phone-pickup__item-numb">0</div>
+                                    <div class="phone-pickup__item-numb-text">Đã hoàn thành</div>
+                                </div>
+                                <div class="phone-pickup__item">
+                                    <div class="phone-pickup__item-numb">0</div>
+                                    <div class="phone-pickup__item-numb-text">Đã Huỷ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-pickup">
+                            <div class="phone-pickup__title">1 đơn hàng</div>
+                            <div class="phone-pickup__works">
+                                <div class="phone-pickup__work">
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Mã đơn hàng</div>
+                                        <div class="phone-pickup__work-col-2">ĐH01</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Khách hàng</div>
+                                        <div class="phone-pickup__work-col-2">Đặng Văn Công</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Ngày đặt</div>
+                                        <div class="phone-pickup__work-col-2">2/9/2024</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Tổng tiền</div>
+                                        <div class="phone-pickup__work-col-2">291,500 VNĐ</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Trạng thái</div>
+                                        <div class="phone-pickup__work-col-2">Chờ lấy hàng</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Thanh toán</div>
+                                        <div class="phone-pickup__work-col-2">COD</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1"></div>
+                                        <div class="phone-pickup__work-col-2">
+                                            <a href="#" class="phone-pickup__work-link">Chi tiết đơn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-pickup__work">
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Mã đơn hàng</div>
+                                        <div class="phone-pickup__work-col-2">ĐH01</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Khách hàng</div>
+                                        <div class="phone-pickup__work-col-2">Đặng Văn Công</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Ngày đặt</div>
+                                        <div class="phone-pickup__work-col-2">2/9/2024</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Tổng tiền</div>
+                                        <div class="phone-pickup__work-col-2">291,500 VNĐ</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Trạng thái</div>
+                                        <div class="phone-pickup__work-col-2">Chờ lấy hàng</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Thanh toán</div>
+                                        <div class="phone-pickup__work-col-2">COD</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1"></div>
+                                        <div class="phone-pickup__work-col-2">
+                                            <a href="#" class="phone-pickup__work-link">Chi tiết đơn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-bottom__navigation">
+                        <div class="phone-bottom__navigation-list">
+                            <div class="phone-bottom__navigation-item">
+                                <i class="uil uil-clipboard-alt phone-bottom__navigation-item-icon"></i>
+                                <div class="phone-bottom__navigation-item-text">Đơn hàng</div>
+                            </div>
+                            <div class="phone-bottom__navigation-item">
+                                <i class="uil uil-list-ol phone-bottom__navigation-item-icon"></i>
+                                <div class="phone-bottom__navigation-item-text">Đang làm</div>
+                            </div>
+                            <div class="phone-bottom__navigation-item">
+                                <i class="uil uil-bag phone-bottom__navigation-item-icon"></i>
+                                <div class="phone-bottom__navigation-item-text">Đã hoàn thành</div>
+                            </div>
+                            <div class="phone-bottom__navigation-item">
+                                <i class="uil uil-user phone-bottom__navigation-item-icon"></i>
+                                <div class="phone-bottom__navigation-item-text">Thông tin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone__notch-container">
+                <div class="phone__notch"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/home_phone.js"></script>
+</html>
