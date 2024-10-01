@@ -412,6 +412,205 @@
     font-weight: bold;
 }
 
+.phone-header__pickup-bar-container,
+.phone-header__pickup-order-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-header__pickup-bar-arrow,
+.phone-header__pickup-order-arrow {
+    padding: 0 10px;
+}
+
+.phone-header__pickup-bar-arrow-icon,
+.phone-header__pickup-order-arrow-icon {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.phone-header__pickup-bar-title,
+.phone-header__pickup-order-title {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Pickup Order */
+.phone-pickup__order-address {
+    background-color: var(--white-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+    padding: 12px 10px;
+    display: flex;
+    column-gap: 10px;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.phone-pickup__order-address-destination-icon {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.phone-pickup__order-address-desc-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 0 4px 0;
+}
+
+.phone-pickup__order-address-desc-divide {
+    color: var(--border-color);
+    margin: 0 4px;
+}
+
+.phone-pickup__order-address-desc-direction {
+    margin-top: 3px;
+    line-height: 16px;
+}
+
+.phone-pickup__order-label {
+    background-color: var(--white-color);
+}
+
+.phone-pickup__order-label-box {
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    height: 2px;
+    width: 100%;
+}
+
+.phone-pickup__order-product-list {
+    margin-top: 8px;
+}
+
+.phone-pickup__order-product-item {
+    font-size: 10px;
+    background-color: var(--white-color);
+    margin-bottom: 4px;
+}
+
+.phone-pickup__order-product-item-header {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 12px 8px;
+}
+
+.phone-pickup__order-product-item-header-favorite {
+    background-color: var(--primary-color);
+    padding: 2px;
+    border-radius: 2px;
+    color: var(--white-color);
+}
+
+.phone-pickup__order-product-item-body {
+    display: flex;
+    column-gap: 12px;
+    padding: 12px 8px;
+}
+
+.phone-pickup__order-product-item-thumb {
+    flex: 2;
+}
+
+.phone-pickup__order-product-item-img {
+    width: 100%;
+}
+
+.phone-pickup__order-product-item-info {
+    flex: 8;
+    color: #a2a2a2;
+}
+
+.phone-pickup__order-product-item-info-name {
+    height: 20px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.phone-pickup__order-product-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.phone-pickup__order-product-item-bottom-change span {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 8px;
+    border-radius: 2px;
+}
+
+.phone-pickup__order-product-item-numb {
+    text-align: right;
+}
+
+.phone-pickup__order-product-item-numb-qunatity {
+    margin-bottom: 3px;
+}
+
+.phone-pickup__order-product-item-transport {
+    background-color: #fafdff;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.phone-pickup__order-product-item-transport-header {
+    padding: 12px 8px 0 8px;
+    font-size: 11px;
+}
+
+.phone-pickup__order-product-item-transport-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.phone-pickup__order-product-item-transport-type-sub {
+    font-weight: bold;
+}
+
+.phone-pickup__order-product-item-transport-time {
+    color: #a2a2a2;
+    padding-bottom: 8px;
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.phone-pickup__order-product-item-transport-inspection {
+    padding: 0 8px 8px 8px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.phone-pickup__order-product-item-transport-inspection-icon {
+    font-size: 13px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.phone-pickup__order-product-item-into-money {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.phone-pickup__order-product-item-into-money-price {
+    color: var(--primary-color);
+}
+
 /* Bottom Navigation */
 .phone-bottom__navigation {
     position: sticky;

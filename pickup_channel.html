@@ -30,7 +30,7 @@
             <div class="phone__screen-container">
                 <div class="phone__screen-bg">
                     <header class="phone-header">
-                        <div class="phone-header__with-search">
+                        <div class="phone-header__with-search hide-on-destop">
                             <div class="phone-header__logo">
                                 <img src="./assets/img/SPX_express_logo.png" class="phone-header__logo-img" alt="">
                                 <div class="phone-header__title">Kênh lấy hàng</div>
@@ -81,9 +81,25 @@
                                 </div>  
                             </div>
                         </div>
+                        <div class="phone-header__pickup-bar hide-on-destop">
+                            <div class="phone-header__pickup-bar-container">
+                                <div class="phone-header__pickup-bar-arrow">
+                                    <i class="uil uil-arrow-left phone-header__pickup-bar-arrow-icon"></i>
+                                </div>
+                                <div class="phone-header__pickup-bar-title">Chờ lấy hàng</div>
+                            </div>
+                        </div>
+                        <div class="phone-header__pickup-order">
+                            <div class="phone-header__pickup-bar-container">
+                                <div class="phone-header__pickup-order-arrow">
+                                    <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                </div>
+                                <div class="phone-header__pickup-order-title">Đơn hàng 01</div>
+                            </div>
+                        </div>
                     </header>
                     <div class="app__container">
-                        <div class="phone-pickup">
+                        <div class="phone-pickup hide-on-destop">
                             <div class="phone-pickup__title">Danh sách cần làm</div>
                             <div class="phone-pickup__list">
                                 <div class="phone-pickup__item">
@@ -109,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="phone-pickup">
+                        <div class="phone-pickup hide-on-destop">
                             <div class="phone-pickup__title">1 đơn hàng</div>
                             <div class="phone-pickup__works">
                                 <div class="phone-pickup__work">
@@ -173,6 +189,140 @@
                                         <div class="phone-pickup__work-col-1"></div>
                                         <div class="phone-pickup__work-col-2">
                                             <a href="#" class="phone-pickup__work-link">Chi tiết đơn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-pickup__work">
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Mã đơn hàng</div>
+                                        <div class="phone-pickup__work-col-2">ĐH01</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Khách hàng</div>
+                                        <div class="phone-pickup__work-col-2">Đặng Văn Công</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Ngày đặt</div>
+                                        <div class="phone-pickup__work-col-2">2/9/2024</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Tổng tiền</div>
+                                        <div class="phone-pickup__work-col-2">291,500 VNĐ</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Trạng thái</div>
+                                        <div class="phone-pickup__work-col-2">Chờ lấy hàng</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1">Thanh toán</div>
+                                        <div class="phone-pickup__work-col-2">COD</div>
+                                    </div>
+                                    <div class="phone-pickup__work-row">
+                                        <div class="phone-pickup__work-col-1"></div>
+                                        <div class="phone-pickup__work-col-2">
+                                            <a href="#" class="phone-pickup__work-link">Chi tiết đơn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-pickup__order">
+                            <div class="phone-pickup__order-address">
+                                <div class="phone-pickup__order-address-destination">
+                                    <i class="uil uil-map-marker phone-pickup__order-address-destination-icon"></i>
+                                </div>
+                                <div class="phone-pickup__order-address-desc">
+                                    <div class="phone-pickup__order-address-desc-title">Địa chỉ lấy hàng hàng</div>
+                                    <span class="phone-pickup__order-address-desc-name">Laneige</span> <span class="phone-pickup__order-address-desc-divide">|</span>
+                                    <span class="phone-pickup__order-address-desc-phone">(+84) 347797502</span>
+                                    <div class="phone-pickup__order-address-desc-direction">Số 20, Ngõ 259 Định Công, Phường Định Công, Quận Hoàng Mai, Hà Nội</div>
+                                </div>
+                            </div>
+                            <div class="phone-pickup__order-label">
+                                <div class="phone-pickup__order-label-box"></div>
+                            </div>
+                            <div class="phone-pickup__order-product">
+                                <div class="phone-pickup__order-product-list">
+                                    <div class="phone-pickup__order-product-item">
+                                        <div class="phone-pickup__order-product-item-header">
+                                            <div class="phone-pickup__order-product-item-header-favorite">Yêu thích</div>
+                                            <div class="phone-pickup__order-product-item-header-shop">Viet Mark</div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-body">
+                                            <div class="phone-pickup__order-product-item-thumb">
+                                                <img class="phone-pickup__order-product-item-img" src="./assets/img/tai_nghe_5.jpg">
+                                            </div>
+                                            <div class="phone-pickup__order-product-item-info">
+                                                <div class="phone-pickup__order-product-item-info-name">
+                                                    Bút Laze Trình Chiếu PowerPoint Kèm Remote Điều Khiển Không Dây Cho Laptop RF 2.4GHz
+                                                </div>
+                                                <div class="phone-pickup__order-product-item-bottom">
+                                                    <div class="phone-pickup__order-product-item-bottom-change">
+                                                        <span>Đổi ý miễn phí</span>
+                                                    </div>
+                                                    <div class="phone-pickup__order-product-item-numb">
+                                                        <div class="phone-pickup__order-product-item-numb-qunatity">x3</div>
+                                                        <div class="phone-pickup__order-product-item-numb-price">121.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-transport">
+                                            <div class="phone-pickup__order-product-item-transport-header">Vận chuyển</div>
+                                            <div class="phone-pickup__order-product-item-transport-type">
+                                                <div class="phone-pickup__order-product-item-transport-type-sub">Nhanh</div>
+                                                <div class="phone-pickup__order-product-item-transport-type-price">15.000đ</div>
+                                            </div>
+                                            <div class="phone-pickup__order-product-item-transport-time">Nhận hàng vào 7 Tháng 7 - 8 Tháng 7</div>
+                                            <div class="phone-pickup__order-product-item-transport-inspection">
+                                                <span>Được đồng kiểm.</span>
+                                                <i class="uil uil-question-circle phone-pickup__order-product-item-transport-inspection-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-into-money">
+                                            <div class="phone-pickup__order-product-item-into-money-sub">Thành tiền (1 sản phẩm):</div>
+                                            <div class="phone-pickup__order-product-item-into-money-price">121.000đ</div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-pickup__order-product-item">
+                                        <div class="phone-pickup__order-product-item-header">
+                                            <div class="phone-pickup__order-product-item-header-favorite">Yêu thích</div>
+                                            <div class="phone-pickup__order-product-item-header-shop">Viet Mark</div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-body">
+                                            <div class="phone-pickup__order-product-item-thumb">
+                                                <img class="phone-pickup__order-product-item-img" src="./assets/img/tai_nghe_5.jpg">
+                                            </div>
+                                            <div class="phone-pickup__order-product-item-info">
+                                                <div class="phone-pickup__order-product-item-info-name">
+                                                    Bút Laze Trình Chiếu PowerPoint Kèm Remote Điều Khiển Không Dây Cho Laptop RF 2.4GHz
+                                                </div>
+                                                <div class="phone-pickup__order-product-item-bottom">
+                                                    <div class="phone-pickup__order-product-item-bottom-change">
+                                                        <span>Đổi ý miễn phí</span>
+                                                    </div>
+                                                    <div class="phone-pickup__order-product-item-numb">
+                                                        <div class="phone-pickup__order-product-item-numb-qunatity">x3</div>
+                                                        <div class="phone-pickup__order-product-item-numb-price">121.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-transport">
+                                            <div class="phone-pickup__order-product-item-transport-header">Vận chuyển</div>
+                                            <div class="phone-pickup__order-product-item-transport-type">
+                                                <div class="phone-pickup__order-product-item-transport-type-sub">Nhanh</div>
+                                                <div class="phone-pickup__order-product-item-transport-type-price">15.000đ</div>
+                                            </div>
+                                            <div class="phone-pickup__order-product-item-transport-time">Nhận hàng vào 7 Tháng 7 - 8 Tháng 7</div>
+                                            <div class="phone-pickup__order-product-item-transport-inspection">
+                                                <span>Được đồng kiểm.</span>
+                                                <i class="uil uil-question-circle phone-pickup__order-product-item-transport-inspection-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="phone-pickup__order-product-item-into-money">
+                                            <div class="phone-pickup__order-product-item-into-money-sub">Thành tiền (1 sản phẩm):</div>
+                                            <div class="phone-pickup__order-product-item-into-money-price">121.000đ</div>
                                         </div>
                                     </div>
                                 </div>
