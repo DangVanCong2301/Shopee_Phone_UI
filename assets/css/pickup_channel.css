@@ -412,16 +412,17 @@
     font-weight: bold;
 }
 
-.phone-header__pickup-bar-container,
-.phone-header__pickup-order-container {
+.phone-header__pickup-bar-container {
     height: 60px;
     display: flex;
     align-items: center;
+    background-color: var(--white-color);
 }
 
 .phone-header__pickup-bar-arrow,
 .phone-header__pickup-order-arrow {
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .phone-header__pickup-bar-arrow-icon,
@@ -440,6 +441,43 @@
 }
 
 /* Pickup Order */
+.phone-pickup__order-header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+}
+
+.phone-pickup__order-footer {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    font-size: 13px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.phone-pickup__order-footer::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(transparent, rgba(0, 0, 0, .06));
+    height: 20px;
+    width: 100%;
+    left: 0;
+    top: -20px;
+}
+
 .phone-pickup__order-address {
     background-color: var(--white-color);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
@@ -608,6 +646,116 @@
 }
 
 .phone-pickup__order-product-item-into-money-price {
+    color: var(--primary-color);
+}
+
+.phone-pickup__order-payment-type {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 12px 8px;
+    margin-bottom: 4px;
+    font-size: 10px;
+}
+
+.phone-pickup__order-payment-type-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-pickup__order-payment-type-header-col {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+}
+
+.phone-pickup__order-payment-type-header-sub-icon {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.phone-pickup__order-payment-type-pay {
+    padding: 10px;
+    background-color: #fff8e4;
+    border: 1px solid #f69113;
+    color: #f69113;
+    border-radius: 2px;
+}
+
+.phone-pickup__order-detail {
+    background-color: var(--white-color);
+    margin-bottom: 10px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-size: 10px;
+}
+
+.phone-pickup__order-detail-header {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.phone-pickup__order-detail-header-icon {
+    font-size: 16px;
+    color: #f69113;
+}
+
+.phone-pickup__order-detail-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.phone-pickup__order-detail-total-price-product, 
+.phone-pickup__order-detail-transport-price {
+    display: flex;
+    justify-content: space-between;
+    color: #a2a2a2;
+}
+
+.phone-pickup__order-detail-bottom {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.phone-pickup__order-detail-bottom-price {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Phone Confirm */
+.phone-modal__confirm {
+    border-radius: 4px;
+    font-size: 10px;
+    background-color: var(--white-color);
+}
+
+.phone-modal__confirm-msg {
+    padding: 20px 30px 20px 30px;
+}
+
+.phone-modal__confirm-btns {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+}
+
+.phone-modal__confirm-btn-agree, 
+.phone-modal__confirm-btn-no {
+    flex: 1;
+    text-align: center;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.phone-modal__confirm-btn-agree {
+    border-left: 1px solid var(--border-color);
     color: var(--primary-color);
 }
 
