@@ -30,7 +30,7 @@
             <div class="phone__screen-container">
                 <div class="phone__screen-bg">
                     <header class="phone-header">
-                        <div class="phone-header__with-search hide-on-destop">
+                        <div class="phone-header__with-search">
                             <div class="phone-header__logo">
                                 <img src="./assets/img/SPX_express_logo.png" class="phone-header__logo-img" alt="">
                                 <div class="phone-header__title">Kênh lấy hàng</div>
@@ -91,22 +91,17 @@
                         </div>
                     </header>
                     <div class="app__container">
-                        <div class="phone-pickup hide-on-destop">
+                        <div class="phone-pickup">
                             <div class="phone-pickup__title">Danh sách cần làm</div>
                             <div class="phone-pickup__list">
-                                <div class="phone-pickup__item">
-                                    <div class="phone-pickup__item-numb">0</div>
-                                    <div class="phone-pickup__item-numb-text">Chờ xác nhận</div>
-                                </div>
-                                <div class="phone-pickup__item">
+                                <div class="phone-pickup__item" onclick="openOrderListTab()">
                                     <div class="phone-pickup__item-numb">0</div>
                                     <div class="phone-pickup__item-numb-text">Chờ lấy hàng</div>
                                 </div>
-                                <!-- <div class="phone-pickup__work-pickup-modal">
-                                    <div class="phone-pickup__work-pickup-modal-header">
-                                        
-                                    </div>
-                                </div> -->
+                                <div class="phone-pickup__item">
+                                    <div class="phone-pickup__item-numb">0</div>
+                                    <div class="phone-pickup__item-numb-text">Đang lấy hàng</div>
+                                </div>
                                 <div class="phone-pickup__item">
                                     <div class="phone-pickup__item-numb">0</div>
                                     <div class="phone-pickup__item-numb-text">Đã hoàn thành</div>
@@ -117,8 +112,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="phone-pickup hide-on-destop">
-                            <div class="phone-pickup__title">1 đơn hàng</div>
+                        <div class="phone-pickup__order-list hide-on-destop">
+                            <div class="phone-pickup__order-header">
+                                <div class="phone-header__pickup-order-arrow">
+                                    <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                </div>
+                                <div class="phone-header__pickup-order-title">Chờ lấy hàng</div>
+                            </div>
+                            <div class="phone-pickup__order-list-title">1 đơn hàng</div>
                             <div class="phone-pickup__works">
                                 <div class="phone-pickup__work">
                                     <div class="phone-pickup__work-row">
@@ -218,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="phone-pickup__order">
+                        <div class="phone-pickup__order hide-on-destop">
                             <div class="phone-pickup__order-header">
                                 <div class="phone-header__pickup-order-arrow">
                                     <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
@@ -406,7 +407,7 @@
                         </div>
                         
                     </div>
-                    <div class="phone-bottom__navigation hide-on-destop">
+                    <div class="phone-bottom__navigation">
                         <div class="phone-bottom__navigation-list">
                             <div class="phone-bottom__navigation-item">
                                 <i class="uil uil-clipboard-alt phone-bottom__navigation-item-icon"></i>
