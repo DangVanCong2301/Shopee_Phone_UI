@@ -58,9 +58,9 @@ input, textarea, button {
     right: 0;
     bottom: 0;
     left: 0;
-    /* display: flex;  */
+    display: flex; 
     animation: fadeIn linear 0.1s;
-    display: none;
+    /* display: none; */
     z-index: 10;
 }
 
@@ -395,25 +395,26 @@ input, textarea, button {
 }
 
 /* Toast */
-.toast {
-    min-width: 400px;
-    max-width: 450px;
+.phone-toast {
+    /* min-width: 400px;
+    max-width: 450px; */
     display: flex;
     align-items: center;
     background-color: var(--white-color);
     border-radius: 6px;
     margin-top: 24px;
     border-left: 4px solid #ccc;
-    padding: 20px 0;
+    padding: 12px;
     box-shadow: 0 5px 8px rgba(0, 0,0, 0.08);
     transition: all linear .3s;
 } 
 
-#toast {
+#phone-toast {
     position: fixed;
     top: 32px;
-    right: 32px;
+    right: 14px;
     z-index: 2002;
+    font-size: 10px;
 }
 
 @keyframes slideInLeft {
@@ -432,56 +433,55 @@ input, textarea, button {
     }
 }
 
-.toast__icon {
-    padding: 0 16px;
-    font-size: 24px;
+.phone-toast__icon {
+    padding: 0 10px 0 0;
+    font-size: 16px;
 }
 
-.toast__body {
+.phone-toast__body {
     flex-grow: 1;
 }
 
-.toast__title {
-    font-size: 16px;
+.phone-toast__title {
+    font-size: 12px;
     font-weight: bold;
     color: #333;
 }
 
-.toast__msg {
-    font-size: 14px;
+.phone-toast__msg {
     color: #888;
     margin-top: 4px;
     line-height: 1.6;
 }
 
-.toast__close {
-    padding: 0 16px;
-    font-size: 24px;
-    color: rgba(0, 0,0, 0.08);
+.phone-toast__close {
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    color: rgba(0, 0,0, 0.54);
     cursor: pointer;
 }
 
-.toast--success {
+.phone-toast--success {
     border-color: #47d864;
 }
 
-.toast--success .toast__icon {
+.phone-toast--success .phone-toast__icon {
     color: #47d864;
 }
 
-.toast--err {
+.phone-toast--err {
     border-color: var(--primary-color);
 }
 
-.toast--err .toast__icon {
+.phone-toast--err .phone-toast__icon {
     color: var(--primary-color);
 }
 
 /* Loading Spinner */
-.spinner {
-    width: 66px;
-    height: 66px;
-    border: 6px solid #fff;
+.phone-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #fff;
     border-top-color: transparent;
     border-radius: 50%;
     animation: spinner .7s linear infinite;

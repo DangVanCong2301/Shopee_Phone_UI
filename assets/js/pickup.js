@@ -29,10 +29,28 @@ function openOrderListTab() {
     `
                         <div class="phone-pickup__order-list">
                             <div class="phone-pickup__order-header">
-                                <div class="phone-header__pickup-order-arrow" onclick="backMainTab()">
-                                    <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                <div class="phone-toolbar">
+                                    <div class="phone-toolbar__time">
+                                        9:12
+                                    </div>
+                                    <div class="phone-toolbar__right">
+                                        <div class="phone-toolbar__wave">
+                                            <span class="phone-toolbar__wave-1"></span>
+                                            <span class="phone-toolbar__wave-2"></span>
+                                            <span class="phone-toolbar__wave-3"></span>
+                                            <span class="phone-toolbar__wave-4"></span>
+                                        </div>
+                                        <div class="phone-toolbar__battery">
+                                            <div class="phone-toolbar__battery-percent"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="phone-header__pickup-order-title">Chờ lấy hàng</div>
+                                <div class="phone-pickup__order-header-container">
+                                    <div class="phone-header__pickup-order-arrow" onclick="backMainTab()">
+                                        <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                    </div>
+                                    <div class="phone-header__pickup-order-title">Chờ lấy hàng</div>
+                                </div>
                             </div>
                             <div class="phone-pickup__order-list-title">1 đơn hàng</div>
                             <div class="phone-pickup__works">
@@ -173,10 +191,28 @@ function openOrderDetail() {
     `
                         <div class="phone-pickup__order">
                             <div class="phone-pickup__order-header">
-                                <div class="phone-header__pickup-order-arrow" onclick="openOrderListTab()">
-                                    <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                <div class="phone-toolbar">
+                                    <div class="phone-toolbar__time">
+                                        9:12
+                                    </div>
+                                    <div class="phone-toolbar__right">
+                                        <div class="phone-toolbar__wave">
+                                            <span class="phone-toolbar__wave-1"></span>
+                                            <span class="phone-toolbar__wave-2"></span>
+                                            <span class="phone-toolbar__wave-3"></span>
+                                            <span class="phone-toolbar__wave-4"></span>
+                                        </div>
+                                        <div class="phone-toolbar__battery">
+                                            <div class="phone-toolbar__battery-percent"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="phone-header__pickup-order-title">Đơn hàng 01</div>
+                                <div class="phone-pickup__order-header-container">
+                                    <div class="phone-header__pickup-order-arrow" onclick="openOrderListTab()">
+                                        <i class="uil uil-arrow-left phone-header__pickup-order-arrow-icon"></i>
+                                    </div>
+                                    <div class="phone-header__pickup-order-title">Đơn hàng 01</div>
+                                </div>
                             </div>
                             <div class="phone-pickup__order-address">
                                 <div class="phone-pickup__order-address-destination">
