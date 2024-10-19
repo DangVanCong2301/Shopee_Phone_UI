@@ -409,3 +409,92 @@ function openReceiveOrderModal() {
                             </div>
     `;
 }
+
+// Confirmation of receipt of goods
+document.querySelector(".phone-pickup__got-good-btn").addEventListener('click', () => {
+    openModal();
+    document.querySelector(".phone-modal__body").innerHTML = 
+    `
+                            <div class="phone-modal__confirm">
+                                <div class="phone-modal__confirm-msg">Bạn đã lấy được đơn hàng này?</div>
+                                <div class="phone-modal__confirm-btns">
+                                    <div class="phone-modal__confirm-btn-no" onclick="closeModal()">Không</div>
+                                    <div class="phone-modal__confirm-btn-agree" onclick="openAddImgPicker()">Đồng ý</div>
+                                </div>
+                            </div>
+    `;
+});
+
+function openAddImgPicker() {
+    document.querySelector(".phone-modal__body").innerHTML = 
+    `
+                            <div class="phone-modal__add-img">
+                                <div class="phone-modal__add-img-title">Thêm ảnh lấy hàng</div>
+                                <div class="phone-modal__add-img-check">
+                                    <div class="phone-modal__add-img-rb">
+                                        <input type="radio" name="ratio-img" id="" class="phone-modal__add-img-input">
+                                        <label for="phone-modal__add-img-input" class="phone-modal__add-img-label">Hình ảnh tỉ lệ 1:1</label>
+                                    </div>
+                                    <div class="phone-modal__add-img-rb">
+                                        <input type="radio" name="ratio-img" id="" class="phone-modal__add-img-input">
+                                        <label for="phone-modal__add-img-input" class="phone-modal__add-img-label">Hình ảnh tỉ lệ 3:4</label>
+                                    </div>
+                                </div>
+                                <div class="phone-modal__add-img-pic">
+                                    <img src="./assets/img/no_img.jpg" class="phone-modal__add-img-value" alt="">
+                                    <label class="phone-modal__add-img-pick">
+                                        <div class="phone-modal__add-img-pick-container">
+                                            <i class="uil uil-image-plus phone-modal__add-img-pick-icon"></i>
+                                            <div class="phone-modal__add-img-pick-sub">
+                                                Thêm hình ảnh (0/9)
+                                            </div>
+                                        </div>
+                                        <input type="file" accept="image/jpeg, image/png, image/jpg" class="phone-modal__add-img-pick-file" id="input-file">
+                                    </label>
+                                </div>
+                                <div class="phone-modal__add-img-btn" onclick="openChangeInTransit()">Xác nhận</div>
+                            </div>
+    `;
+}
+
+function openChangeInTransit() {
+    openModal();
+    document.querySelector(".phone-modal__body").innerHTML = `<div class="phone-spinner"></div>`;
+    document.querySelector(".phone-pickup__got-good-btn").classList.add("hide-on-destop");
+    document.querySelector(".phone-pickup__about-warehouse-btn").classList.remove("hide-on-destop");
+    setTimeout(() => {
+        closeModal();
+        toast({ title: "Thông báo", msg: `Chuyển trạng thái thành công`, type: "success", duration: 5000 });
+        document.querySelector(".phone-modal__body").innerHTML = "";
+        setTimeout(() => {
+            document.querySelector(".phone-pickup__about-warehouse-btn").innerHTML = "Xác nhận đã về tổng kho";
+        }, 1000)
+    }, 2000);
+}
+
+document.querySelector(".phone-pickup__about-warehouse-btn").addEventListener('click', () => {
+    openModal();
+    document.querySelector(".phone-modal__body").innerHTML = 
+    `
+                            <div class="phone-modal__confirm">
+                                <div class="phone-modal__confirm-msg">Bạn đã gửi đơn hàng tại tổng kho?</div>
+                                <div class="phone-modal__confirm-btns">
+                                    <div class="phone-modal__confirm-btn-no" onclick="closeModal()">Không</div>
+                                    <div class="phone-modal__confirm-btn-agree" onclick="openCompleteJob()">Đồng ý</div>
+                                </div>
+                            </div>
+    `;
+});
+
+function openCompleteJob() {
+    openModal();
+    document.querySelector(".phone-modal__body").innerHTML = `<div class="phone-spinner"></div>`;
+    setTimeout(() => {
+        closeModal();
+        toast({ title: "Thông báo", msg: `Đơn hàng đã xong`, type: "success", duration: 5000 });
+        document.querySelector(".phone-modal__body").innerHTML = "";
+        setTimeout(() => {
+            backMainTab();
+        }, 1000)
+    }, 2000);
+}
